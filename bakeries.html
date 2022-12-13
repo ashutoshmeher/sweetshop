@@ -1,0 +1,551 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            sweet shop
+        </title>
+        <style>
+            body
+            {
+                padding:0px;
+                margin:0px;
+            }
+            header
+            {
+                height:60px;
+                width:100%;
+                box-sizing:border-box;
+                padding:5px;
+                float:left;
+                background-color:chartreuse;
+            }
+            #brand_name
+            {
+                font-size:25px;
+                font-family:Helvetica;
+                margin:0px;
+                padding:0px;
+                float:left;
+                margin-top:15px;
+                margin-left:30px;
+
+                
+            }
+            #tag_line
+            {
+                float:right;
+                margin:5px;
+                margin-top:20px;
+                margin-right:35px;
+            }
+            #form
+            {
+                width:100%;
+                height:120px;
+                background-color:red;
+                float:left;
+                padding:30px;
+                box-sizing: border-box;
+            }
+            #search_btn
+            {
+                height:35px;
+                width:400px;
+                margin:5px;
+                float:left;
+                font-size:15px;
+                border-style:none;
+                box-sizing: border-box;
+              
+                
+            }
+            #submit_btn
+            {
+                height:35px;
+                width:100px;
+                margin:5px;
+                float:left;
+                box-sizing: border-box;
+
+            }
+            #table
+            {
+                height:40px;
+                width:500px;
+                float:right;
+                background-color:white;
+                box-sizing:border-box;
+            }
+            #nav_tab
+            {
+                height: 40px;
+                width: 500px;
+                box-sizing:border-box;
+                float:right;
+            }
+            #nav_col
+            {
+                text-align:center;
+                background-color: aliceblue;
+
+            }
+            a
+            {
+                text-decoration: none;
+                color:black;
+            }
+            section
+            {
+                height:1950px;
+                width:100%;
+                box-sizing:border-box;
+                padding:30px;
+            }
+            #venue
+            {
+                float:left;
+
+            }
+            #mobile
+            {
+                float:right;
+            }
+            #sweet_name
+            {
+                height:550px;
+                width:720px;
+                box-sizing:border-box;
+              background-color: black;
+                float:left;
+                clear:left;
+                margin-top:20px;
+                padding:5px;
+
+
+            }
+            #popular_sweet
+            {
+                font-family:sans-serif;
+                padding: 0px;
+                margin:0px;
+                color:white;
+                margin-left: 20px;
+                margin-top: 5px;
+                text-align:center;
+            }
+            #sweet_img
+            {
+                width:300px;
+                height:200px;
+                border-width:5px;
+                margin:20px;
+                border-style: solid;
+                border-color: aqua;
+                
+            }
+            #price_chart
+            {
+                height:550px;
+                width:600px;
+                border-color:black;
+                float:right;
+                box-sizing:border-box;
+                margin-top:25px;
+
+            }
+            #price_header
+             {
+                 box-sizing:border-box;
+                 background-color: black;
+                 height:50px;
+                 box-sizing:border-box;
+                 text-align:center;
+                 color:white;
+                 font-size:32px;
+                 font-family:Franklin Gothic Medium;
+             }
+             #price_list
+             {
+                background-color: white;
+                 box-sizing:border-box;
+                 background-color:red; 
+                 height:500px; 
+                 box-sizing:border-box;
+                 
+             }
+             #name_sweet
+             {
+                 font-size:25px;
+                 color:white;
+             }
+             #price_sweet
+             {
+                 list-style:none;
+                 font-size:25px;
+                 color:white;
+             }
+             fieldset
+             {
+                 height:700px;
+                 width:690px;
+                 border-width:1px;
+                 margin-top:50px;
+                 border-sizing:border-box;
+                 border-color:black;
+                 border-style:solid;
+                 float:left;
+             }
+             legend
+             {
+                 font-family:sans-serif;
+                 font-size:20px;
+                 color:red;
+                 font-width:bold;
+
+             }
+             form
+             {
+                 font-family:sans-serif;
+                 color: #323232;
+             }
+             #form_box
+             {
+                 width:100%;
+                 height:45px;
+                 box-sizing:border-box;
+                 border-width:1px;
+                 border-color:#ccc;
+                 border-style:solid;
+                 margin-top:5px;
+             }
+             #address_box
+             {
+                 height:100px;
+                 width:100%;
+                 box-sizing:border-box;
+                 margin-top:5px;
+                 border-width:1px;
+                 border-color:#ccc;
+                 border-style:solid;
+             }
+             #submit_box
+             {
+                 float:right;
+                 padding:5px;
+             }
+             #aside
+            {
+                width:600px;
+                height:700px;
+                border-width:1px;
+                 border-color:#ccc;
+                 border-style:solid;
+                 margin-top:53px;
+                 float:right;
+                 box-sizing:border-box;
+                 padding: 20px;
+            }
+            #about
+        {
+            font-family:sans-serif;
+            text-align:center;
+        }
+        #paragraph
+        {
+            text-align:justify;
+            font-family:sans-serif;
+            line-height:17px;
+        }
+        #box
+        {
+            width:100%;
+            height: 50px;
+            background-color: red;
+            box-sizing:border-box;
+            float:left;
+            margin-top:20px;
+            border-radius:50px;
+            color: aqua;
+            
+
+
+        }
+        #more_sweet
+        {
+            text-align:center;
+            margin-top:12px;
+        }
+        #more_sweetbox
+        {
+            width: 250px;;
+            height: 290px;
+            box-sizing:border-box;
+            float:left;
+            margin:20px;
+            border-width:2px;
+            border-color:black;
+            border-style:solid;
+            padding:20px;
+
+
+        }
+        #more_sweetimg
+        {
+          width:210px;
+          height:170px;
+          box-sizing:border-box;
+          float:left;
+        }
+        #buy_btn
+        {
+            height:40px;
+            width:100px;
+            border-width:1px;
+            border-color:#ccc;
+            border-style:solid;
+            background-color:white;
+            margin-top:40px;
+            margin-left:45px;
+        }
+        footer
+        {
+            width:100%;
+            height:250px;
+            box-sizing:border-box;
+            float:left;
+            background-color: black;
+        }
+        #contact_us
+        {
+            height:150px;
+            width:200px;
+            box-sizing:border-box;
+
+            float:left;
+            margin:20px;
+            color:white;
+           
+        }
+        #brand_us
+        {
+            height:150px;
+            width:200px;
+            box-sizing:border-box;
+            float:right;
+            margin:20px;
+            color:white;
+            
+        }
+        #contact_detail
+        {
+            padding:0px;
+            margin:0px;
+            float:left;
+
+        }
+        #c-cum
+        {
+            margin-top:20px;
+            float:left;
+        }
+        #c-us
+        {
+            padding:0px;
+            margin:0px;
+        }
+        #developer
+        {
+            color:white;
+            clear:left;
+            margin-left:45%;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="brand_name">SWEETSHOP.COM</h1>
+            <P id="tag_line">India largest sweet shop</P>    
+        </header>
+        <nav id="form">
+            <form>
+                <input type="search" name="search" placeholder="search here" id="search_btn"/>
+                <input type="submit" value="submit" id="submit_btn"/>
+            </form>
+            <table id="nav_tab">
+                <tr>
+                    <td id="nav_col" width="20%"><a href="#">home</a></td>
+                    <td id="nav_col" width="20%"><a href="#brand_us">about us </a></td>
+                    <td id="nav_col" width="20%"><a href="#contact_us">contact us</a></td>
+                    <td id="nav_col" width="20%"><a href="sweet.html">sweet</a></td>
+                    <td id="nav_col" width="20%"><a href="bakeries.html">bakeries</a></td>
+                </tr>
+            </table>
+        </nav>
+        <section>
+            <address id="venue">
+                venue :near darlipali road,sundergarh
+            </address>
+            <address id="mobile" >
+                oreder online mobile-no:6370425191
+            </address>
+            <nav id="sweet_name">
+                <center>
+                <h1 id="popular_sweet">our popular sweet</h1>
+                <img src="sweets/5.jpg" id="sweet_img" />
+                <img src="sweets/2.jpg" id="sweet_img" />
+                <img src="sweets/3.jpg" id="sweet_img" />
+                <img src="sweets/6.jpg" id="sweet_img" />
+               </center>
+            </nav>
+            <table id="price_chart">
+                <tr id="row_one">
+                    <td id="price_header">
+                        sweet Name
+                    </td>
+                    <td id="price_header">
+                       price
+                    </td>
+                </tr>
+                <tr id="row_two">
+                    <td id="price_list">
+                        <ol>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            <hr color="white"/>
+                            <li id="name_sweet">Rasgulla</li>
+                            
+                            
+                            
+                        </ol>
+                    </td>
+                    <td id="price_list">
+                        <ol>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            <hr color="white"/>
+                            <li id="price_sweet">Rs.250</li>
+                            
+                    </td>
+                </tr>
+            </table>
+            <fieldset id="form_section">
+               <legend>
+                   Order Online
+                </legend>
+               <form>
+                   <br/><br/>
+                 buyer name
+                 <br>
+                 <input type="name" name="buyer name" id="form_box" placeholder="Enter name"/>
+                 <br/><br/><br/>
+                 mobile
+                 <br/>
+                 <input type="number" name="mobile-no" id="form_box"  placeholder="mobile-number"/>
+                 <br/><br/><br/>
+                 choose sweet
+                 <br/>
+                 <select name="choose sweet" id="form_box">
+                 <option>...........................................................................choose sweet................................................................................</option>
+                 <option value="rasgulla">resgulla</option>
+                 <option value="gulab jamun">gulab jamun</optiion>
+                 <option value="rasgulla">rasgulla</option>
+                </select>
+                <br/><br/><br/>
+                Type quantity
+                <br/>
+                <input type="text" name="type quantity" id="form_box" placeholder="1kg"/>
+                <br/><br/><br/>
+                Address
+                <br/>
+                <textarea name="address" id="address_box">
+                </textarea>
+                <br/>
+                <input type="submit" value="order now" id="submit_box"/>
+              </form>
+            </fieldset>
+            <div id="aside">
+                <h1 id="about">About us</h1>
+                <hr/>
+                <p id="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis quibusdam et eum assumenda? Harum possimus sed veniam laudantium quos culpa beatae aperiam, quas fuga assumenda corporis maxime magnam deserunt.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odit maiores quasi esse adipisci consectetur, rerum ipsum, dolores corporis possimus quo ex rem in quaerat! Accusamus sapiente consectetur ipsa possimus hic nostrum officia minima consequatur dicta? Quam laboriosam quos, explicabo, iure fuga blanditiis quae amet quibusdam odit mollitia quidem fugit officiis sit hic tenetur impedit! Similique nulla nobis dolore fugiat repellat nisi voluptas quod praesentium quae quos eos blanditiis, obcaecati adipisci. Vero aspernatur adipisci alias placeat quidem assumenda blanditiis, porro at! At illum non eaque optio. Ipsa deserunt sint expedita nisi saepe, magni iure itaque rem sit sapiente quas. Eligendi, voluptatem ad. Provident quae optio facilis voluptas vitae reprehenderit! Assumenda aut excepturi accusamus sit. Pariatur, reprehenderit est esse voluptatem explicabo voluptates quisquam libero quaerat harum tempore voluptate aut ea, quidem odio delectus quibusdam itaque ipsam quod quos culpa laudantium totam, modi id ullam? Ratione, ut, ab quaerat eum placeat quidem atque autem minus harum ipsa reprehenderit eaque nulla cum eos iure consectetur. Accusamus alias nihil voluptatem? Repellendus mollitia, nesciunt sed consequatur architecto sunt atque quam eveniet vitae quasi illo repellat at est ullam quo distinctio unde modi labore expedita reiciendis odio aliquam. Aspernatur deserunt minus cupiditate quia ut illum quas dolor eligendi expedita voluptatum dolore culpa non impedit hic iure, nisi, consequatur nihil alias itaque praesentium, assumenda quasi repellat? Earum facilis vitae neque accusantium quidem eum illo eligendi tempora delectus quis inventore explicabo temporibus quia aliquid harum, optio odio itaque repellendus dolores in? Numquam id officia possimus, aut non, eveniet atque ab quod est nostrum placeat fugit cumque nisi! Eum, quaerat. Debitis nobis asperiores laboriosam? Veniam, quidem? Rem quam unde molestias eligendi praesentium. Possimus adipisci sint officiis nam voluptatum voluptatem necessitatibus quas, distinctio architecto asperiores unde hic quos voluptas officia accusantium itaque ducimus. Illum tempore consequuntur dignissimos quos aut maiores.
+                </p>
+            </div>
+            <div id="box">
+               <h1 id="more_sweet"> MORE SWEET</h1>
+            </div>
+            <div id="more_sweetbox">
+               <img src="sweets/10.jpg" id="more_sweetimg"/>
+               <a href="#form_section"><button id="buy_btn">Buy Now</button></a>
+            </div>
+            <div id="more_sweetbox">
+                <img src="sweets/11.jpg" id="more_sweetimg"/>
+                <a href="#form_section"><button id="buy_btn">Buy Now</button></a>
+             </div>
+             <div id="more_sweetbox">
+                <img src="sweets/12.jpg" id="more_sweetimg"/>
+                <a href="#form_section"><button id="buy_btn">Buy Now</button></a>
+             </div>
+             <div id="more_sweetbox">
+                <img src="sweets/13.jpg" id="more_sweetimg"/>
+                <a href="#form_section"><button id="buy_btn">Buy Now</button></a>
+             </div>
+             <div id="more_sweetbox">
+                <img src="sweets/14.jpg" id="more_sweetimg"/>
+                <a href="form_section"><button id="buy_btn">Buy Now</button></a>
+             </div>
+        </section>
+        <footer>
+            <div id="contact_us">
+                <h1 id="contact_detail">Contact Us</h1>
+                <adderss id="c-cum">
+                    website:sweetshop.com
+                    <br/>
+                    E-mail:asumeher@gmail.com
+                    <br/>
+                    mobile-no:6370425191
+                    <br/>
+                    T-no:321 65654
+                </adderss>
+            </div>
+            <div id="brand_us">
+                <h1 id="c-us">About Us</h1>
+                <address>We are one of the top mostmost sweet quality in out area.we make best quality of oood and bakeries.we also free delivary,call us.</address>
+            </div>
+            <address id="developer">
+                Developed By:ASHUTOSH
+            </address>
+        </footer>
+    </body>
+</html>
